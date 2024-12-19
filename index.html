@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividades Avaliativas</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <nav>
+        BEM-VINDO À MINHA ATIVIDADE
+    </nav>
+    <section>
+        <h1>Atividades Avaliativas</h1>
+        <h3>Escolha uma das atividades para ver como ficou:</h3>
+
+        <div class="atividades">
+            <h2>Atividade 1</h2>
+            <p>
+                Escreva um programa para ler 2 valores (considere que não serão informados valores iguais) 
+                e escrever o maior deles. <br><br>
+                <button onclick="atividade1()" id="ver1">VER ATIVIDADE</button>
+            </p>
+            <div id="atividade1" style="display: none;">
+                <h2>Maior ou menor:</h2>
+                <label for="num1">Digite o primeiro número:</label><br>
+                <input type="number" name="num1" id="num1"><br>
+                <label for="num2">Digite o primeiro número:</label><br>
+                <input type="number" name="num2" id="num2"><br>
+                <button onclick="maiorMenor()">TESTAR</button>
+            </div>
+        </div>
+        <div class="atividades">
+            <h2>Atividade 2</h2>
+            <p>
+                Escreva um programa que verifique a validade de uma senha fornecida pelo usuário. A senha válida é o 
+                número 1234. Devem ser impressas as seguintes mensagens: 
+                <br>ACESSO PERMITIDO caso a senha seja válida. 
+                <br>ACESSO NEGADO caso a senha seja inválida. <br><br>
+                <button onclick="atividade2()" id="ver2">VER ATIVIDADE</button>
+
+                <div id="atividade2" style="display: none;">
+                    <h2>DIgite sua senha</h2><br>
+                    <label for="senha">SENHA</label><br>
+                    <input type="password" name="senha" id="senha"><br>
+                    <button onclick="senha()">ENTRAR</button>
+                </div>
+            </p>
+        </div>
+        <div class="atividades">
+            <h2>Atividade 3</h2>
+            <p>
+                As maçãs custam R$0,30 cada se forem compradas menos do que uma dúzia, e R$0,25 se forem compradas pelo menos doze. 
+                Escreva um programa que leia o número de maçãs compradas, calcule e escreva o valor total da compra.
+                <br><br>
+                <button onclick="atividade3()" id="ver3">VER ATIVIDADE</button>
+            </p>
+
+            <div id="atividade3" style="display: none;">
+                <h2>Comprando maçãs</h2>
+                <label for="macas">Quantidade</label><br>
+                <input type="number" name="macas" id="macas"><br>
+                <button onclick="calcular()">CALCULAR</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <h2>Desenvolvido por: Marcelo Pinheiro</h2>
+        <h2>Turma - BNT Noite</h2>
+    </footer>
+</body>
+</html>
